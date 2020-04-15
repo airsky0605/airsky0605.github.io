@@ -17,7 +17,7 @@
   </div>
   <div class="container mainbox" id="app">
     <template v-if="list.length>0">
-      <div class="item" v-for="(item, index) in list" :key="index" @click="goto(item)">
+      <div class="item" v-for="(item, index) in list" :key="index">
         {{item.name}}
       </div>
     </template>
@@ -28,7 +28,7 @@
   <footer class="footer">
     <div class="inner">
       <p>Copyright © 2020-2020 中华干脆面. All Rights Reserved.</p>
-      <p>Powered by HTML+Javascript</p>
+      <p>Powered by HTML+JAVASCRIPT</p>
     </div>
   </footer>
 </body>
@@ -69,9 +69,6 @@
           })
           this.list = list
         })
-      },
-      goto(item){
-        window.location.href = item.html_url
       }
     },
   })

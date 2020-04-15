@@ -1,0 +1,62 @@
+.mainbox{
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.banner{
+  position: relative;
+  background: url(../img/banner.jpeg) 0% 50% / cover no-repeat;
+}
+.banner::after{
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+.banner .inner{
+  padding: 240px 0;
+  position: relative;
+}
+.banner .inner p{
+  text-align: center;
+  color: #fff;
+  position: relative;
+  background: transparent;
+}
+.banner .inner .t1{
+  font-size: 26px;
+  
+}
+.banner .inner .t2{
+  font-size: 22px;
+  text-decoration: line-through;
+}
+
+.container{
+  margin: 35px auto!important;
+}
+
+.container .item{
+  width: 1180px;
+  margin: 0 auto 10px;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 3px rgba(26,26,26,.1);
+  box-shadow: 0 1px 3px rgba(26,26,26,.1);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 30px;
+}
+.footer{
+  background: #999;
+  color: #c6c7c9;
+  text-align: center;
+}
+.footer .inner{
+  padding: 40px 0 20px;
+}

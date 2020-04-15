@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="banner">
+    <div class="inner">
+      <p class="t1">更年轻的时候,说的话都是笑话</p>
+    </div>
+  </div>
+  <div class="container mainbox">
+
+  </div>
+  <footer class="footer">
+    <div class="inner">
+      <p>Copyright © 2020-2020 中华干脆面. All Rights Reserved.</p>
+      <p>Powered by HTML+JAVASCRIPT</p>
+    </div>
+  </footer>
+</body>
+<script>
+  getGithubList()
+  function getGithubList(){
+    fetch('https://api.github.com/repos/airsky0605/airsky0605.github.io/contents').then(res=>{
+      console.log(res)
+    })
+  }
+</script>
+</html>

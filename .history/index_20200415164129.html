@@ -17,7 +17,7 @@
   </div>
   <div class="container mainbox" id="app">
     <template v-if="list.length>0">
-      <div class="item" v-for="(item, index) in list" :key="index" @click="goto(item)">
+      <div class="item" v-for="(item, index) in list" :key="index">
         {{item.name}}
       </div>
     </template>
@@ -69,9 +69,6 @@
           })
           this.list = list
         })
-      },
-      goto(item){
-        window.location.href = item.html_url
       }
     },
   })
