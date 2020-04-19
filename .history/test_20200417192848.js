@@ -19,11 +19,11 @@ yanketang()
 // console.log(yanketang().next().value)
 
 const _arr = ['c','a','l','l']
-Array.prototype._foreach = function (fn) { 
-  for (var i = 0; i < this.length; i++) { 
-    fn.call(this,this[i],i,this)
-  }
-}
+// Array.prototype._foreach = function (fn) { 
+//   for (var i = 0; i < this.length; i++) { 
+//     fn.call(this,this[i],i,this)
+//   }
+// }
 Array.prototype._foreach = function (fn) { 
   console.log(this)
   for (var i = 0; i < this.length; i++) { 
@@ -31,5 +31,5 @@ Array.prototype._foreach = function (fn) {
   }
 }
 _arr._foreach(function (val,i,arr) {
-  console.log(val,i,arr)
+  // console.log(val,i,arr)
 })
