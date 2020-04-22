@@ -94,24 +94,22 @@ function next () {
     _fn()
    }
 }
-const promiseAction = (data) => {
+function fn1(){ 
+  console.log('output 1')
+}
+function fn2 () { 
+  setTimeout(() => {
+    console.log('output 2')
+  }, 1000);
+}
+function fn3(){ 
+  console.log('output 3')
+}
+const promiseAction = (fn) => {
   return new Promise((res,rej) => {
-    res(data)
+    res(fn())
   })
 }
-
-const api1 = () => {
-  return promiseAction(1)
-}
-const api2 = () => {
-  return promiseAction(2)
-}
-const api3 = () => {
-  return promiseAction(3)
-}
-const stack2 = [api1, api2, api3]
-stack2.forEach(async item => { 
-  console.log(await item())
+stack.forEach( async item => { 
+  await promiseAction(item)
 })
-
-

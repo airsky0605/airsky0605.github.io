@@ -110,8 +110,9 @@ const api3 = () => {
   return promiseAction(3)
 }
 const stack2 = [api1, api2, api3]
-stack2.forEach(async item => { 
-  console.log(await item())
+
+stack2.forEach(item => { 
+  item()
 })
 
 

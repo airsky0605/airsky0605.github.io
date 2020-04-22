@@ -94,24 +94,14 @@ function next () {
     _fn()
    }
 }
-const promiseAction = (data) => {
-  return new Promise((res,rej) => {
-    res(data)
-  })
+function fn1(){ 
+  console.log('output 1')
 }
-
-const api1 = () => {
-  return promiseAction(1)
+function fn2 () { 
+  setTimeout(() => {
+    console.log('output 2')
+  }, 1000);
 }
-const api2 = () => {
-  return promiseAction(2)
+function fn3(){ 
+  console.log('output 3')
 }
-const api3 = () => {
-  return promiseAction(3)
-}
-const stack2 = [api1, api2, api3]
-stack2.forEach(async item => { 
-  console.log(await item())
-})
-
-
